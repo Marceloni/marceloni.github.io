@@ -1,5 +1,6 @@
 #header{
     background: gray;
-    height: 10pt;
+    min-height: fit-content;
+    height: 100pt;
     width: 100%;
 }
