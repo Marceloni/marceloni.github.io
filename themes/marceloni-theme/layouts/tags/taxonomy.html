@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ $p := where site.RegularPages "Type" "posts" }}
+  {{ $p = where $p "Params.tags" "intersect" (slice .Title) }}
+
+  {{ range $p }}
+    <a draggable="false" href="{{ .RelPermalink }}" class="post-div">
+      <h2>{{ .LinkTitle }}</h2>
+      {{ with .Resources.GetMatch "cover.jpg" }}
+        <img src="{{ .RelPermalink }}">
+      {{ end }}
+      <h4>{{ .Params.description }}</h4>
+    </a>
+  {{ end }}
+{{ end }}

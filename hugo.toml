@@ -1,0 +1,4 @@
+baseURL = 'https://marceloni.github.io/'
+languageCode = 'en-us'
+title = 'Marceloni Blog'
+theme = 'marceloni-theme'

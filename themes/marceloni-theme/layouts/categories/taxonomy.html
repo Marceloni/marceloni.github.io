@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ if eq .Title "addon" }}<h1>Addons</h1>
+  {{ else }}<h1>Blog</h1>{{ end }}
+
+  
+  {{ .Content }}
+  {{ $p := where site.RegularPages "Type" "posts" }}
+  {{ $p = where $p "Params.categories" "intersect" (slice .Title) }}
+
+  {{ range $p }}
+    <a draggable="false" href="{{ .RelPermalink }}" class="post-div">
+      <h2>{{ .LinkTitle }}</h2>
+      {{ with .Resources.GetMatch "cover.jpg" }}
+        <img src="{{ .RelPermalink }}">
+      {{ end }}
+      <h4>{{ .Params.description }}</h4>
+    </a>
+  {{ end }}
+{{ end }}

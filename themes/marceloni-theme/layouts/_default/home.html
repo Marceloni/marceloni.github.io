@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ range site.RegularPages }}
+    <a draggable="false" href="{{ .RelPermalink }}" class="post-div">
+      <h2>{{ .LinkTitle }}</h2>
+      {{ with .Resources.GetMatch "cover.jpg" }}
+        <img src="{{ .RelPermalink }}">
+      {{ end }}
+      <h4>{{ .Params.description }}</h4>
+    </a>
+  {{ end }}
+{{ end }}
