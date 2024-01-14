@@ -135,7 +135,8 @@ a {
 }
 
 .post-div {
-  width: 500pt;
+  width: 500pt;  
+  max-width: calc(100% - 20pt);
   border: 2px solid var(--primary);
   border-radius: 5px;
   box-shadow: 5px 5px 5px var(--primary);
@@ -154,7 +155,13 @@ a {
 }
 .post-div > img {
   max-height:150px;
+  max-width: 100%;
   width: auto;
   align-self: flex-start;
   margin-bottom: 5pt;
+}
+
+.post-content img {
+  max-height: 200pt;
+  max-width: 100%;
 }

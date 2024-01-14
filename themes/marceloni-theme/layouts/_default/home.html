@@ -3,7 +3,7 @@
   {{ range first 3 site.RegularPages }}
     <a draggable="false" href="{{ .RelPermalink }}" class="post-div">
       <h2>{{ .LinkTitle }}</h2>
-      {{ with .Resources.GetMatch "cover.jpg" }}
+      {{ with .Resources.GetMatch "cover.*" }}
         <img src="{{ .RelPermalink }}">
       {{ end }}
       <h4>{{ .Params.description }}</h4>
