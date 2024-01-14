@@ -2,7 +2,7 @@
 title = 'Website online 🌐'
 date = 1705250381
 draft = false
-tags = ['update','website']
+tags = ['Website']
 categories = ["blog"]
 description = 'First Blog post here! More to come'
 +++

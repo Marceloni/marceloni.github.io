@@ -2,7 +2,7 @@
 title = 'Carnival & Arcade Frenzy'
 date = 1705250381
 draft = false
-tags = ['fun']
+tags = ['Items','Decoration']
 categories = ["addon"]
 description = 'Download page for my "Carnival & Arcade Frenzy" Addon'
 +++
