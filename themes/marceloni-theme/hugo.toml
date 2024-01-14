@@ -3,7 +3,9 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 
-googleAnalytics='G-EF75S6BMCD'
+[services]
+  [services.googleAnalytics]
+    ID = 'G-EF75S6BMCD'
 
 [[menus.main]]
 name = 'Home'
