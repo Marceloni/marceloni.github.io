@@ -1,7 +1,7 @@
 baseURL = 'https://marceloni.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-
+googleAnalytics = 'G-EF75S6BMCD'
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
