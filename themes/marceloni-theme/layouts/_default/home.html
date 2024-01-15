@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ .Content }}
+  <div class="posts-list">
   {{ range first 3 site.RegularPages }}
     <a draggable="false" href="{{ .RelPermalink }}" class="post-div">
       <h2>{{ .LinkTitle }}</h2>
@@ -9,4 +10,5 @@
       <h4>{{ .Params.description }}</h4>
     </a>
   {{ end }}
+  </div>
 {{ end }}
