@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 function changeTheme() {
     if(document.getElementById("theme-switch").getElementsByTagName("input")[0].checked){
-        document.body.classList.remove("dark")
+        document.body.classList.add("dark")
         localStorage.setItem("theme", "light")
     }else {
-        document.body.classList.add("dark")
+        document.body.classList.remove("dark")
         localStorage.setItem("theme", "dark")
     }
     document.body.classList.toggle("dark")
